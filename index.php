@@ -12,6 +12,29 @@ class Sex{
   const WOMEN = 2;
 }
 
+class Quote{
+  $quote = array();
+  $quote['negative'](
+  const LINE01 = '';
+  const LINE02 = '';
+  const LINE03 = '';
+  const LINE04 = '';
+  const LINE05 = '';
+  const LINE06 = '';
+  const LINE07 = '';
+  const LINE08 = '';
+  const LINE09 = '';
+  const LINE10 = '';
+  )
+  $quote['positive'](
+  const LINE11 = '';
+  const LINE12 = '';
+  const LINE13 = '';
+  const LINE14 = '';
+  const LINE15 = '';
+  )
+}
+
 abstract class Human{
   protected $name;
   protected $sex;
@@ -34,9 +57,20 @@ abstract class Human{
   public function getAnxiety(){
     return $this->anxiety;
   }
+  public function setQuote($key){
+    $line = $quote[$key][mt_rand(0,10)];
+    return $line;
+  }
+  public function getQuote(){
+    return $line;
+  }
   public function negotiate($object){
     $effect = mt_rand($this->$anxietyMin, $this->$anxietyMax);
-    $quote = (getQuote())
+    $quoteFlg =  if($quoteCategory === 'negative'){
+      return 0;
+    }else{
+      return 1;
+    }
     if(!mt_rand(0,9)){
       $effect = $effect * 2.0;
       $effect = (int)$effect;
@@ -52,9 +86,46 @@ abstract class Human{
         Log::set($this->getName().Quote::LINE03);
       }
     }
-    if()
-    $object->setAnxiety($object->getAnxiety()-$effect);
+      switch($quoteFlg){
+        case 0 :
+        $object->setAnxiety($object->getAnxiety()-$effect);
+        break;
+        case 1 :
+        $object->setAnxiety($object->getAnxiety()+$effect);
+        break;
+      }
+      if($object->getAnxiety() >= 100){
+        $object->setAnxiety(100);
+      }
     Log::set($effect.)
   }
 }
+
+class Criminal extends Human{
+  public function takeQuote($str){
+    if(array_keys($quote, $line) === 'negative'){
+      $quoteCategory = 'negative';
+    }
+  }else{
+    $quoteCategory = 'positive';
+  }
+}
+
+
  ?>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Negtiator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="contents-wrap">
+      <h1>Negotiator</h1>
+
+    </div>
+  </body>
+</html>
