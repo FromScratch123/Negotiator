@@ -1,0 +1,232 @@
+body{
+  margin: 0;
+  background: #abbaab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contents-wrap{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.contents-wrap > h1{
+  margin: 20px auto;
+  text-align: center;
+  background: #FC354C;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0ABFBC, #FC354C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip:text;
+  color: transparent;
+}
+
+.start-area{
+  width: 30%;
+  height: 100px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 100px;
+}
+
+.rule{
+  background: #eee;
+  padding: 10px;
+}
+
+.rule-header{
+  text-align: center;
+}
+
+.rule-list h3{
+  text-align: center;
+}
+
+.rule-list p{
+  text-align: center;
+}
+
+.rule-list ol{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.start-area input{
+  background: none;
+  font-size: 18px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.start-area input:hover{
+  cursor: pointer;
+}
+
+.criminal-area{
+  width: 100%;
+  position: relative;
+  border: double 4px;
+  background: #fff;
+  padding: 10px;
+}
+
+.img-wrap{
+  text-align: center;
+  height: 300px;
+  margin-top: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrap img{
+  height: 100%;
+  width: auto;
+  box-shadow: 0 0 10px gray;
+}
+
+.criminal-name{
+  text-align: center;
+}
+
+.criminal-name > p{
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.anxiety-rate{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.anxiety-rate > p{
+  /* position: absolute;
+  right: 50px; */
+  margin: 0;
+  font-size: 20px;
+  /* background: linear-gradient(transparent 60%, #ff6); */
+}
+
+
+.negotiator-area{
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border: double 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px;
+}
+
+.save-count{
+  position: absolute;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  left: 0;
+  top: 38px;
+}
+
+.save-count > p{
+  margin: 0;
+  font-size: 20px;
+  /* background: linear-gradient(transparent 60%, #ff6); */
+}
+
+.reliability-rate{
+  position: absolute;
+  left: 0;
+  margin: 0;
+  height: 100px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.reliability-rate > p{
+  font-size: 20px;
+  /* background: linear-gradient(transparent 60%, #ff6); */
+  margin: 0;
+}
+
+.options{
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.options input{
+  font-size: 20px;
+  background: none;
+  border: none;
+}
+
+.options input:not(:last-child){
+  margin-right: 35px;
+}
+
+.options input:hover{
+  cursor: pointer;
+}
+
+.log-area{
+  width: 100%;
+  height: 200px;
+  text-align: left;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 30px;
+  overflow: scroll;
+  border: double 4px;
+  background: #fff;
+}
+
+.gameover{
+  color: #333;
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  text-align: center;
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    border-radius: 5px;
+  box-shadow: 0 0 16px #333;
+}
+
+.twitter-button{
+  margin-top: 10px;
+}
+
+.return-to-top{
+  position: relative;
+  height: 30px;
+}
+
+.exit > input{
+  border-radius: 5px;
+  color: #eee;
+  background: gray;
+  position: absolute;
+  font-size: 1.2em;
+  height: 30px;
+  width: 100px;
+  right: 10px;
+  bottom: 0;
+}
+
+.exit > input:hover{
+  background-color: darkblue;
+  cursor: pointer;
+}
